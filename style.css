@@ -1,0 +1,33 @@
+#gallery {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row > div {
+  width: 64px;
+  height: 64px;
+  border: 1px solid red;
+  position: relative;
+  font-size: small;
+  color: gray;
+}
+
+.gallery .labels {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gallery .labels div {
+  position: absolute;
+  transition: left 1s, top 1s;
+  font-size: large;
+}
+
+body.loading .gallery .labels {
+  display: none;
+}
