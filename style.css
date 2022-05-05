@@ -36,7 +36,18 @@ body.loading #controls {
   display: none;
 }
 
-#spreadsheet-url {
+footer {
   position: fixed;
   bottom: 5px;
+  font-size: smaller;
+  color: gray;
+}
+
+#spreadsheet-url {
+  font-family: monospace;
+  color: gray;
+}
+
+#spreadsheet-url:hover {
+  color: blue;
 }
