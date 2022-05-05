@@ -1,5 +1,6 @@
-#gallery {
+.gallery {
   position: relative;
+  padding-bottom: 5px;
 }
 
 .row {
@@ -8,26 +9,34 @@
 }
 
 .row > div {
-  width: 64px;
-  height: 64px;
-  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  border: 1px solid lightgray;
   position: relative;
   font-size: small;
   color: gray;
+  padding: 5px;
 }
 
-.gallery .labels {
+.performers {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.gallery .labels div {
+.performers .label {
   position: absolute;
   transition: left 1s, top 1s;
   font-size: large;
+  width: 100px;
+  text-align: center;
 }
 
-body.loading .gallery .labels {
+body.loading #controls {
   display: none;
+}
+
+#spreadsheet-url {
+  position: fixed;
+  bottom: 5px;
 }
